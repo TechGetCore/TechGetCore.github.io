@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneProgCore | Official Space</title>
+    <title>ONE-PROG core</title>
     <style>
-        /* Базовые хардкорные настройки пространства */
         * {
             margin: 0;
             padding: 0;
@@ -13,114 +12,61 @@
         }
 
         body {
-            background-color: #050508; /* Глубокий космический черный */
-            color: #e2e8f0;
+            background-color: #0d0d11; /* Просто глубокий темный фон */
+            color: #cbd5e1;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            overflow-x: hidden;
         }
 
-        /* Главный архитектурный контейнер */
-        .core-container {
+        .compact-box {
             text-align: center;
-            background: linear-gradient(135deg, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.03) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 50px 40px;
-            border-radius: 28px;
-            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7);
-            max-width: 500px;
+            max-width: 400px;
             width: 100%;
-            position: relative;
         }
 
-        /* Твоя сочная круглая иконка из репозитория */
-        .core-logo {
-            width: 150px;
-            height: 150px;
+        .avatar {
+            width: 120px; /* Сделали логотип покомпактнее */
+            height: 120px;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #2563eb; /* Тонкая синяя нативная рамка */
-            box-shadow: 0 0 35px rgba(37, 99, 235, 0.25); /* Мягкое неоновое свечение */
-            margin-bottom: 30px;
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid #2563eb; /* Тонкая, неброская рамка */
+            margin-bottom: 20px;
         }
 
-        /* При наведении логотип слегка увеличивается */
-        .core-logo:hover {
-            transform: scale(1.06);
-        }
-
-        /* Главное имя технологии */
+        /* Большое, строгое название, как ты просил */
         h1 {
-            font-size: 2.3rem;
+            font-size: 2.2rem;
             font-weight: 800;
-            letter-spacing: 5px;
-            margin-bottom: 8px;
-            background: linear-gradient(90deg, #3b82f6, #6366f1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffffff;
+            margin-bottom: 12px;
         }
 
-        /* Подзаголовок системы */
-        .system-status {
-            font-size: 0.85rem;
-            color: #475569;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-        }
-
-        /* Строгое официальное описание на английском */
-        .description {
+        /* Текст ровно в две строчки: просто и понятно */
+        .text {
             font-size: 0.95rem;
-            line-height: 1.6;
-            color: #94a3b8;
-            margin-bottom: 35px;
-            text-align: justify;
-            text-align-last: center;
-        }
-
-        /* Контейнер для вывода используемых инструментов */
-        .stack-box {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.03);
-            padding: 15px;
-            border-radius: 16px;
-            font-size: 0.85rem;
-            color: #cbd5e1;
-            letter-spacing: 1px;
-        }
-
-        .stack-box span {
-            color: #60a5fa;
-            font-weight: 700;
+            line-height: 1.5;
+            color: #64748b; /* Спокойный серый цвет */
+            margin-bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <div class="core-container">
-        <!-- Подключили твой официальный файл картинки -->
-        <img src="myofficialpng.png" alt="OneProgCore Logo" class="core-logo">
+    <div class="compact-box">
+        <img src="myofficialpng.png" alt="Logo" class="avatar">
         
-        <h1>OneProgCore</h1>
-        <div class="system-status">Independent Tech Engine</div>
+        <h1>ONE-PROG core</h1>
         
-        <!-- Официальный манифест архитектуры -->
-        <div class="description">
-            OneProgCore is an independent architectural space focused on building high-performance CLI utilities and low-level system logic. Driven by efficiency and clean data processing, we build cross-platform solutions natively and from scratch.
-        </div>
-        
-        <!-- Блок про твой главный инструмент -->
-        <div class="stack-box">
-            Primary Instrument: <span>C# / .NET Environment</span>
-        </div>
+        <!-- Ровно две строчки спокойного, скромного текста -->
+        <p class="text">
+            Personal space for development and system logic experiments.<br>
+            Building independent cross-platform CLI utilities using C# / .NET.
+        </p>
     </div>
 
 </body>
